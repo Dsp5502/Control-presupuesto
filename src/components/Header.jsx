@@ -1,4 +1,5 @@
 import React from 'react';
+import ControlPreuspuesto from './ControlPreuspuesto';
 import NuevoPresupuesto from './NuevoPresupuesto';
 
 const Header = ({
@@ -11,7 +12,7 @@ const Header = ({
     <header>
       <h1>Planificador de Gastos</h1>
       {isValidPresupuesto ? (
-        <p>Control Presupuesto</p>
+        <ControlPreuspuesto presupuesto={presupuesto} />
       ) : (
         <NuevoPresupuesto
           presupuesto={presupuesto}
